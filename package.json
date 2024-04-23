@@ -1,5 +1,5 @@
 {
-  "description": "Various color matrix based image filters for iOS & Android",
+  "description": "Various color matrix based image filters for HarmonyOS",
   "keywords": [
     "react-native",
     "color-matrix",
@@ -9,7 +9,7 @@
   "main": "dist/index.js",
   "react-native": "src/index.ts",
   "types": "dist/index.d.ts",
-  "name": "react-native-color-matrix-image-filters",
+  "name": "@react-native-oh-tpl/react-native-color-matrix-image-filters",
   "author": "iyegoroff <iegoroff@gmail.com>",
   "bugs": {
     "url": "https://github.com/iyegoroff/react-native-color-matrix-image-filters/issues"
@@ -19,34 +19,34 @@
     "type": "git",
     "url": "https://github.com/iyegoroff/react-native-color-matrix-image-filters.git"
   },
-  "version": "6.0.7",
+  "version": "6.0.5-0.0.1",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "^18.2.47",
+    "@types/react": "18.0.25",
     "@types/react-test-renderer": "^18.0.7",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-config-standard-with-typescript": "^43.0.0",
-    "eslint-plugin-import": "^2.29.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.2.2",
+    "prettier": "^2.8.0",
     "react-native": "0.73.2",
-    "type-coverage": "^2.27.1",
-    "typescript": "^5.3.3"
+    "type-coverage": "^2.22.0",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
     "concat-color-matrices": "^1.0.0",
-    "rn-color-matrices": "^4.1.0",
-    "ts-tiny-invariant": "^2.0.5"
+    "ts-tiny-invariant": "^2.0.4",
+    "clamp": "^1.0.1"
   },
   "scripts": {
     "preversion": "npm run lint -- --fix && npm run type-coverage && npm run build",
@@ -55,6 +55,9 @@
     "lint": "eslint .",
     "type-coverage": "type-coverage --detail --strict --ignore-files **/examples/** --ignore-files **/dist/**"
   },
+  "harmony": {
+    "alias":"react-native-color-matrix-image-filters"
+  },
   "files": [
     "android",
     "ios",
@@ -62,7 +65,12 @@
     "src",
     "*.md",
     "*.podspec",
-    "LICENSE"
+    "LICENSE",
+    "harmony",
+    "!harmony/oh_modules",
+    "!harmony/**/build",
+    "!harmony/**/oh_modules",
+    "rn-color-matrices"
   ],
   "typeCoverage": {
     "atLeast": 100

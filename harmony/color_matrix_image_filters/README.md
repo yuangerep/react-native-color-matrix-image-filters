@@ -1,13 +1,13 @@
 > 模板版本：v0.0.1
 
 <p align="center">
-  <h1 align="center"> <code>react-native-color-matrix-image-filters</code> </h1>
+  <h1 align="center"> <code>react-native-pager-view</code> </h1>
 </p>
 <p align="center">
-    <a href="https://github.com/iyegoroff/react-native-color-matrix-image-filters">
+    <a href="https://github.com/callstack/react-native-pager-view">
          <img src="https://img.shields.io/badge/platforms-android%20|%20ios%20|%20harmony%20-lightgrey.svg" alt="Supported platforms" />
     </a>
-       <a href="https://github.com/iyegoroff/react-native-color-matrix-image-filters/blob/master/LICENSE">
+       <a href="https://github.com/callstack/react-native-pager-view/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License" />
     </a>
 </p>

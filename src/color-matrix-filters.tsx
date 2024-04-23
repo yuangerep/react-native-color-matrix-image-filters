@@ -1,6 +1,6 @@
 import React from 'react'
 import { ColorMatrixImageFilter } from './color-matrix-filter'
-import filters from 'rn-color-matrices'
+import filters from '../rn-color-matrices'
 import { View, ViewProps } from 'react-native'
 
 export const ColorMatrix = ColorMatrixImageFilter

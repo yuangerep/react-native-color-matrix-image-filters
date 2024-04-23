@@ -1,0 +1,7 @@
+{
+  module: {
+    name: 'color_matrix_image_filters',
+    type: 'har',
+    deviceTypes: ['default'],
+  },
+}
