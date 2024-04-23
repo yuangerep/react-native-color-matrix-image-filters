@@ -109,7 +109,7 @@ cd entry
 ohpm install --no-link
 ```
 
-### 配置 CMakeLists 和引入 ViewPagerPackage
+### 配置 CMakeLists 和引入 ColorMatrixImageFiltersPackage
 
 打开 `entry/src/main/cpp/CMakeLists.txt`，添加：
 
@@ -155,47 +155,6 @@ std::vector<std::shared_ptr<Package>> PackageProvider::getPackages(Package::Cont
 +     std::make_shared<ColorMatrixImageFiltersPackage>(ctx)
     };
 }
-```
-
-### 在 ArkTs 侧引入 RNCViewPager 组件
-
-打开 `entry/src/main/ets/pages/index.ets`，添加：
-
-```diff
-import {
-  RNApp,
-  ComponentBuilderContext,
-  RNAbility,
-  AnyJSBundleProvider,
-  MetroJSBundleProvider,
-  ResourceJSBundleProvider,
-} from 'rnoh'
-import { SampleView, SAMPLE_VIEW_TYPE, PropsDisplayer } from "rnoh-sample-package"
-import { createRNPackages } from '../RNPackagesFactory'
-
-@Builder
-function CustomComponentBuilder(ctx: ComponentBuilderContext) {
-      if (ctx.componentName === SampleView.NAME) {
-      SampleView({
-        ctx: ctx.rnComponentContext,
-        tag: ctx.tag,
-      })
-    }
-    if (ctx.componentName === GeneratedSampleView.NAME) {
-      GeneratedSampleView({
-        ctx: ctx.rnComponentContext,
-        tag: ctx.tag,
-      })
-    }
-    if (ctx.componentName === PropsDisplayer.NAME) {
-      PropsDisplayer({
-        ctx: ctx.rnComponentContext,
-        tag: ctx.tag
-      })
-    }
- ...
-}
-...
 ```
 
 ### 运行
