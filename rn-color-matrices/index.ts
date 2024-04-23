@@ -6,8 +6,8 @@ export type Matrix = [
   number, number, number, number, number, number, number, number, number, number
 ]
 
-const bias = Platform.OS === 'ios' ? 1 : 255
-const biasRev = Platform.OS === 'ios' ? 255 : 1
+const bias = 1;
+const biasRev = 255;
 
 const colorToRGB = (color: number) => [
   ((color >> 16) & 0xFF) / 255,
