@@ -228,4 +228,4 @@ ohpm install
 
 ## 开源协议
 
-本项目基于 [The MIT License (MIT)](https://github.com/react-native-oh-library/react-native-color-matrix-image-filters/blob/harmony/LICENSE) ，请自由地享受和参与开源。
+本项目基于 [The MIT License (MIT)](https://github.com/react-native-oh-library/react-native-color-matrix-image-filters/blob/master/LICENSE) ，请自由地享受和参与开源。
