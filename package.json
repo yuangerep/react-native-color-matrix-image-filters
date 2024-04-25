@@ -44,9 +44,9 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "clamp": "^1.0.1",
     "concat-color-matrices": "^1.0.0",
-    "ts-tiny-invariant": "^2.0.4",
-    "clamp": "^1.0.1"
+    "ts-tiny-invariant": "^2.0.4"
   },
   "scripts": {
     "preversion": "npm run lint -- --fix && npm run type-coverage && npm run build",
@@ -56,11 +56,9 @@
     "type-coverage": "type-coverage --detail --strict --ignore-files **/examples/** --ignore-files **/dist/**"
   },
   "harmony": {
-    "alias":"react-native-color-matrix-image-filters"
+    "alias": "react-native-color-matrix-image-filters"
   },
   "files": [
-    "android",
-    "ios",
     "dist",
     "src",
     "*.md",

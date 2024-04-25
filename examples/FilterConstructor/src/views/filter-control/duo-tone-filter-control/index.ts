@@ -1,1 +1,0 @@
-export { DuoToneFilterControl } from './DuoToneFilterControl'
