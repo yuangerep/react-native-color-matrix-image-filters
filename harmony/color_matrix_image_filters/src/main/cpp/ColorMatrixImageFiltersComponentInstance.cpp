@@ -36,7 +36,7 @@ namespace rnoh {
         m_colorMatrixImageFiltersNode.insertChild(childComponentInstance->getLocalRootArkUINode(), index);
     }
 
-    StackNode &ColorMatrixImageFiltersComponentInstance::getLocalRootArkUINode() { return m_colorMatrixImageFiltersNode; }
+    ColorMatrixImageFiltersStackNode &ColorMatrixImageFiltersComponentInstance::getLocalRootArkUINode() { return m_colorMatrixImageFiltersNode; }
 
     void ColorMatrixImageFiltersComponentInstance::onChildRemoved(ComponentInstance::Shared const &childComponentInstance) {
         CppComponentInstance::onChildRemoved(childComponentInstance);

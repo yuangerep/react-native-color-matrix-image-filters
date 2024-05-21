@@ -27,13 +27,13 @@
 #include <folly/dynamic.h>
 #include<math.h>
 #include "ShadowNodes.h"
-#include "RNOH/arkui/StackNode.h"
+#include "ColorMatrixImageFiltersStackNode.h"
 #include "RNOHCorePackage/ComponentInstances/ImageComponentInstance.h"
 
 namespace rnoh {
     class ColorMatrixImageFiltersComponentInstance : public CppComponentInstance<facebook::react::CMIFColorMatrixImageFilterShadowNode>{
     private:
-        StackNode m_colorMatrixImageFiltersNode;
+        ColorMatrixImageFiltersStackNode m_colorMatrixImageFiltersNode;
         std::vector<facebook::react::Float> m_matrix;
 
     public:
@@ -43,7 +43,7 @@ namespace rnoh {
 
         void onChildRemoved(ComponentInstance::Shared const &childComponentInstance) override;
 
-        StackNode &getLocalRootArkUINode() override;
+        ColorMatrixImageFiltersStackNode &getLocalRootArkUINode() override;
 
         void onPropsChanged(SharedConcreteProps const &props) override;
 
